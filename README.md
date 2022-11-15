@@ -11,10 +11,7 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -59,8 +56,6 @@ Users should be able to:
 }
 ```
 
-### Continued development
-
 ### Useful resources
 
 - [dark mode switcher](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/) - a useful article on dark mode
@@ -70,11 +65,3 @@ Users should be able to:
 - [min,max,clamp functions](https://www.youtube.com/watch?v=U9VF-4euyRo) - useful video on those functions
 
 - [dynamic grid](https://stackoverflow.com/questions/52417889/setting-minimum-and-maximum-number-of-columns-using-css-grid) - helped a lot with creating a dynamic grid
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
