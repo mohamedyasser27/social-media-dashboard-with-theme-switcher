@@ -83,24 +83,47 @@ header {
 
 header .content {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+header hr {
+  display: none;
+  height: 1px;
+    background-color: var(--Blue_Text);
+    border: none;
 }
 
-.toggle-dark-mode {
+.toggle-dark-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle-dark {
   background: var(--Toggle);
   border-radius: 50px;
   max-width: 50px;
   width: 100%;
   padding: 5px;
   cursor: pointer;
+  flex-shrink: 0;
+}
+.toggle-dark__label {
+  font-weight: 700;
+  color: #63687e;
+  flex-shrink: 0;
+}
+.dark-theme .toggle-dark__label {
+  color: #fff;
 }
 
-.dark-theme .toggle-dark-mode {
+.dark-theme .toggle-dark {
   background-color: var(--Toggle);
 }
 
-.toggle-dark-mode__btn {
+.toggle-dark__btn {
   background-color: var(--Top_BG_Pattern);
   border-radius: 50%;
   display: block;
@@ -111,7 +134,7 @@ header .content {
   transition: transform 150ms 0s ease-out;
 }
 
-.toggle-dark-mode__btn.on {
+.toggle-dark__btn.on {
   transform: translate(0px);
 }
 
@@ -139,8 +162,6 @@ header .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-
   /*relative to ::after*/
   position: relative;
 }
@@ -176,6 +197,7 @@ header .content {
   display: flex;
   align-items: center;
   gap: 7px;
+  margin-top: 25px;
 }
 
 .platform-username {
@@ -187,6 +209,8 @@ header .content {
   color: var(--Large_Text);
   font-size: 3.5rem;
   font-weight: 700;
+  margin-bottom: -15px;
+  margin-top: 10px;
 }
 
 .platform__following-type {
@@ -198,6 +222,7 @@ header .content {
   /*relative to ::before icon*/
   position: relative;
   font-weight: 700;
+  margin-top: 25px;
 }
 .platform__followers-change::before {
   position: absolute;
@@ -223,10 +248,19 @@ header .content {
   content: url("../images/icon-up.svg");
 }
 
-/* @media only screen and (max-width: 500px) {
- 
+@media only screen and (max-width: 640px) {
+  .toggle-dark-container {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
 
-} */
+  header hr {
+    display: initial;
+    width: 100%;
+    
+  }
+}
 
 /* 
 @media (prefers-color-scheme: dark) {
