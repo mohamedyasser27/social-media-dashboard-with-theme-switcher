@@ -47,12 +47,29 @@ Users should be able to:
 
 ### What I learned
 
+- how to create a dark mode switcher
+- how to create grid with columns that has a minimum width and the grid doesn't exceed a certain number of columns
+
+```css
+.grid{
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(clamp(250px, calc((100% - var(--gap)) / 4), 300px), 1fr)
+  );
+}
+```
+
 ### Continued development
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [dark mode switcher](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/) - a useful article on dark mode
+
+- [min function](https://www.youtube.com/watch?v=7khSaA91e04) - a very good video to wrap your head around how min function works
+
+- [min,max,clamp functions](https://www.youtube.com/watch?v=U9VF-4euyRo) - useful video on those functions
+
+- [dynamic grid](https://stackoverflow.com/questions/52417889/setting-minimum-and-maximum-number-of-columns-using-css-grid) - helped a lot with creating a dynamic grid
 
 ## Author
 
