@@ -49,9 +49,12 @@ Users should be able to:
 
 ```css
 .grid{
-  grid-template-columns: repeat(
+  grid-template-columns: 
+  --gap:20px;
+  display:grid;
+  grid-template-columns:repeat(
     auto-fit,
-    minmax(clamp(250px, calc((100% - var(--gap)) / 4), 300px), 1fr)
+    minmax(clamp(250px, calc((100% - var(--gap)) / 4), 300px), 1fr);
   );
 }
 ```
